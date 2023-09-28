@@ -1,3 +1,4 @@
+8 gyms
 Brock Vulpix 85 Fire Growlithe 42 Fire Charmander 70 Fire Magmar 38 Fire Ponyta 72 Fire
 Misty Starmie 78 Water Psyduck 99 Water Poliwhirl 83 Water Horsea 59 Water Vaporeon 65 Water
 Surge Raichu 80 Electric Electrode 53 Electric Magneton 64 Electric Electabuzz 59 Electric Jolteon 67 Electric
