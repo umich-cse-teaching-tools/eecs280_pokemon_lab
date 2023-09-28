@@ -123,9 +123,9 @@ TEST(pokemon_battle) {
   ASSERT_TRUE(Pokemon_battle(charmander12, pikachu));
 
   // Test exact boundaries
-  Pokemon p1("A", 10, FIRE);
-  Pokemon p2("A", 20, WATER);
-  Pokemon p3("A", 21, WATER);
+  Pokemon p1("A", 10, WATER);
+  Pokemon p2("A", 20, FIRE);
+  Pokemon p3("A", 21, FIRE);
   ASSERT_TRUE(Pokemon_battle(p1, p2));
   ASSERT_FALSE(Pokemon_battle(p1, p3));
 }
