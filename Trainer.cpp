@@ -55,9 +55,9 @@ Pokemon Trainer::choose_pokemon() {
 //          the given adversary is chosen and returned. If there are no such
 //          pokemon, the first pokemon in the roster is returned. The chosen
 //          pokemon is removed from the roster.
-Pokemon Trainer::choose_pokemon(const Pokemon &adversary) {
+Pokemon Trainer::choose_pokemon(PokemonType adversary_type) {
   for(int i = 0; i < active_roster.size(); ++i) {
-    if (active_roster[i].is_effective_against(adversary.get_type())) {
+    if (active_roster[i].is_effective_against(adversary_type)) {
       Pokemon chosen = active_roster[i];
       active_roster.erase(active_roster.begin() + i);
       return chosen;

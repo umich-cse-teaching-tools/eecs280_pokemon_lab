@@ -45,7 +45,7 @@ public:
   //          the given adversary is chosen and returned. If there are no such
   //          pokemon, the first pokemon in the roster is returned. The chosen
   //          pokemon is removed from the roster.
-  Pokemon choose_pokemon(const Pokemon &adversary);
+  Pokemon choose_pokemon(PokemonType adversary_type);
 
   // EFFECTS: Resets the trainers active roster so that it contains all
   //          of their pokemon.

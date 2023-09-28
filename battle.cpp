@@ -27,7 +27,7 @@ public:
   bool one_battle(Trainer *player, Trainer *gym_leader) {
     Pokemon enemy = gym_leader->choose_pokemon();
     cout << *gym_leader << " chooses " << enemy << endl;
-    Pokemon p = player->choose_pokemon(enemy);
+    Pokemon p = player->choose_pokemon(enemy.get_type());
     cout << *player << " chooses " << p << endl;
     if (Pokemon_battle(p, enemy)) {
       cout << p << " defeats " << enemy << endl << endl;
