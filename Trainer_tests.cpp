@@ -90,8 +90,7 @@ TEST(trainer_choose_pokemon_2) {
   Trainer * trainer = Trainer_factory(input);
 
   // The water pokemon should be chosen to face against a fire type
-  Pokemon fire("Z", 10, FIRE);
-  ASSERT_EQUAL(trainer->choose_pokemon(fire).get_name(), "Squirtle");
+  ASSERT_EQUAL(trainer->choose_pokemon(FIRE).get_name(), "Squirtle");
   delete trainer;
 }
 
@@ -101,8 +100,7 @@ TEST(trainer_choose_pokemon_3) {
   Trainer * trainer = Trainer_factory(input);
 
   // The first squirtle with level 100 should be chosen to face a fire pokemon
-  Pokemon fire("Z", 10, FIRE);
-  ASSERT_EQUAL(trainer->choose_pokemon(fire).get_level(), 100);
+  ASSERT_EQUAL(trainer->choose_pokemon(FIRE).get_level(), 100);
   delete trainer;
 }
 
@@ -112,8 +110,7 @@ TEST(trainer_choose_pokemon_4) {
   Trainer * trainer = Trainer_factory(input);
 
   // There are no water pokemon, so the first one (Pikachu), should be chosen
-  Pokemon fire("Z", 10, FIRE);
-  ASSERT_EQUAL(trainer->choose_pokemon(fire).get_name(), "Pikachu");
+  ASSERT_EQUAL(trainer->choose_pokemon(FIRE).get_name(), "Pikachu");
   delete trainer;
 }
 
