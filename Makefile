@@ -10,7 +10,7 @@ Pokemon_tests.exe: Pokemon_tests.cpp Pokemon.cpp
 Trainer_tests.exe: Trainer_tests.cpp Trainer.cpp Pokemon.cpp
 	$(CXX) $(CXXFLAGS) $^ -o $@
 
-battle.exe: battle.cpp Trainer.cpp Pokemon.cpp
+main.exe: main.cpp Trainer.cpp Pokemon.cpp
 	$(CXX) $(CXXFLAGS) $^ -o $@
 
 .SUFFIXES:
