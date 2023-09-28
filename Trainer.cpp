@@ -50,7 +50,7 @@ Pokemon Trainer::choose_pokemon() {
   return chosen;
 }
 
-// EFFECTS: Chooses a pokemon to face a specific adversary. Specifically,
+// EFFECTS: Chooses a pokemon to face a specific adversary type. Specifically,
 //          the first pokemon in the active roster that is "effective" against
 //          the given adversary is chosen and returned. If there are no such
 //          pokemon, the first pokemon in the roster is returned. The chosen
