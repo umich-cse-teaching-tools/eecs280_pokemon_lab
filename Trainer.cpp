@@ -28,7 +28,7 @@ Trainer::Trainer(std::istream &is) {
   // Assumption: Read exactly 5 pokemon
   for(int i = 0; i < 5; ++i) {
     Pokemon p;
-    is >> p;
+    //is >> p;
     pokemon.push_back(p);
   }
 
